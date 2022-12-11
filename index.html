@@ -71,7 +71,7 @@
                                             <label class="pull-left">Select exam you would like to appear</label>
                                             <select id="drpNatureofExam" required="" class="form-control">
                                                     <option value="JEE">JEE-Main</option>
-                                                    <option value="UGC-NET">UGC-NET</option>
+                                                    <!-- <option value="UGC-NET">UGC-NET</option> -->
                                                 </select>
                                         </div>
                                         <div class="form-group" id="divJEE">
@@ -97,52 +97,8 @@
                                                 <option value="118">Paper 2 08-Jan-2016 (Evening)</option>
                                                 </select>
                                         </div>
-                                        <div class="form-group" id="divNET" style="display:none;">
-                                            <label class="pull-left">Paper</label>
-                                            <select id="drpPastPaper_ugc" required="" class="form-control">
-                                                <option value="201">Paper 1</option>
-                                        <option value="202">Paper 2 - Commerce</option>
-                                        <option value="203">Paper 2 - Adult education  </option>
-                                        <option value="204">Paper 2 - Anthropology</option>
-                                        <option value="205">Paper 2 - Arab Culture and Islamic Studies</option>
-                                        <option value="206">Paper 2 - Archaeology</option>
-                                        <option value="207">Paper 2 - Buddhist, jaina</option>
-                                        <option value="209">Paper 2 - Comparative Study of Religion </option>
-                                        <option value="210">Paper 2 - Criminology</option>
-                                        <option value="211">Paper 2 - Dance</option>
-                                        <option value="212">Paper 2 - Defence and Strategic Studies</option>
-                                        <option value="213">Paper 2 - Drama/Theatre</option>
-                                        <option value="214">Paper 2 - Economics</option>
-                                        <option value="215">Paper 2 - Education</option>
-                                        <option value="216">Paper 2 - Electronic Science</option>
-                                        <option value="217">Paper 2 - English</option>
-                                        <option value="218">Paper 2 - Forensic Science</option>
-                                        <option value="219">Paper 2 - Geography</option>
-                                        <option value="220">Paper 2 - Hindi</option>
-                                        <option value="221">Paper 2 - History</option>
-                                        <option value="222">Paper 2 - Home Science</option>
-                                        <option value="223">Paper 2 - Human Rights and Duties</option>
-                                        <option value="224">Paper 2 - Indian Culture</option>
-                                        <option value="225">Paper 2 - International and Area Studies</option>
-                                        <option value="226">Paper 2 - Karnatik Music</option>
-                                        <option value="227">Paper 2 - Law</option>
-                                        <option value="228">Paper 2 - Management</option>
-                                        <option value="229">Paper 2 - Percussion Instruments</option>
-                                        <option value="230">Paper 2 - Philosophy</option>
-                                        <option value="231">Paper 2 - Physical Education</option>
-                                        <option value="232">Paper 2 - Political Science</option>
-                                        <option value="233">Paper 2 - Population Studies</option>
-                                        <option value="234">Paper 2 - Prakrit</option>
-                                        <option value="235">Paper 2 - Psychology</option>
-                                        <option value="236">Paper 2 - Public Administration</option>
-                                        <option value="237">Paper 2 - Sanskrit</option>
-                                        <option value="238">Paper 2 - Social Medicine & Community Health</option>
-                                        <option value="239">Paper 2 - Social Work</option>
-                                        <option value="240">Paper 2 - Tourism Administration and Management</option>
-                                        <option value="241">Paper 2 - Women Studies</option>
-                                        <option value="242">Paper 2 - Yoga</option>
-                                                </select>
-                                        </div>
+                                      
+                                    
                                         <div class="form-group"> <a class="btn btn-primary btn-block" id="btnStart">Start Mock Test</a> </div>
                                     </div>
                                 </div>
@@ -192,10 +148,10 @@
             $('#drpNatureofExam').on('change', function() {
                 if ($(this).val() == 'JEE') {
                     $('#divJEE').show();
-                    $('#divNET').hide();
+                    // $('#divNET').hide();
                 } else {
                     $('#divJEE').hide();
-                    $('#divNET').show();
+                    // $('#divNET').show();
                 }
             });
         });
